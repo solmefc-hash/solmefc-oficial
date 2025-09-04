@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOLME FC eSports - Inicio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navegación -->
+  <header>
+  <nav class="navbar">
+      <a href="index.html" class="logo-text">
+        <img src="img/Solme-FC_2.PNG" alt="Solme FC Logo">
+        <span>SOLME FC</span>
+      </a>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="juegos.html">Juegos</a></li>
+        <li><a href="calendario.html">Calendario</a></li>
+        <li><a href="camiseta.html">Camiseta</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero principal -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Bienvenido a SOLME FC eSports</h1>
+      <p>Competimos en los principales torneos de eSports: pasión, estrategia y victoria.</p>
+      <a href="equipo.html" class="btn">Conoce a nuestro equipo</a>
+    </div>
+  </section>
+
+  <!-- Presentación rápida -->
+  <section class="about">
+    <h2>¿Quiénes somos?</h2>
+    <p>
+      SOLME FC eSports es un equipo dedicado a la excelencia en videojuegos competitivos. 
+      Representamos a nuestra comunidad con orgullo en títulos como EA FC, COD Warzone y más.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 SOLME FC eSports. Todos los derechos reservados.</p>
+  </footer>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('open');
+  });
+</script>
+
+
+</body>
+</html>

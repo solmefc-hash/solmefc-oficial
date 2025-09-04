@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOLME FC eSports - Juegos</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navegación -->
+  <header>
+     <nav class="navbar">
+      <a href="index.html" class="logo-text">
+        <img src="img/Solme-FC_2.PNG" alt="Solme FC Logo">
+        <span>SOLME FC</span>
+      </a>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="juegos.html">Juegos</a></li>
+        <li><a href="calendario.html">Calendario</a></li>
+        <li><a href="camiseta.html">Camiseta</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección Juegos -->
+  <section class="games">
+    <h1>Juegos Competitivos</h1>
+    <p>Estos son los títulos donde competimos de manera profesional.</p>
+
+    <div class="games-grid">
+      <!-- Juego 1 -->
+      <div class="game-card">
+        <img src="img/cod s5.jpg" alt="Valorant">
+        <h3>COD Warzone</h3>
+        <p>Juego de disparos donde la estrategia y precisión lo son todo. Armamos partidas privadas con premios en efectivo $</p>
+      </div>
+
+      <!-- Juego 2 -->
+      <div class="game-card">
+        <img src="img/fornite.jpg" alt="League of Legends">
+        <h3>Fornite</h3>
+        <p>Un videojuego multijugador desarrollado por Epic Games que combina disparos, construcción y un modo de batalla campal donde 100 jugadores compiten hasta que solo uno sobrevive en una isla.</p>
+      </div>
+
+      <!-- Juego 3 -->
+      <div class="game-card">
+        <img src="img/EA-Sports-FC-25.jpg" alt="EA Sports FC">
+        <h3>EA Sports FC</h3>
+        <p>El clásico de fútbol competitivo, representando la pasión por el deporte rey.</p>
+      </div>
+
+      <!-- Juego 4 -->
+      <!-- <div class="game-card">
+        <img src="img/cs2.jpg" alt="Counter-Strike 2">
+        <h3>Counter-Strike 2</h3>
+        <p>Uno de los shooters competitivos más históricos del mundo de los eSports.</p>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 SOLME FC eSports. Todos los derechos reservados.</p>
+  </footer>
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('open');
+  });
+</script>
+</body>
+</html>

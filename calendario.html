@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOLME FC eSports - Calendario</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navegación -->
+  <header>
+       <nav class="navbar">
+      <a href="index.html" class="logo-text">
+        <img src="img/Solme-FC_2.PNG" alt="Solme FC Logo">
+        <span>SOLME FC</span>
+      </a>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="juegos.html">Juegos</a></li>
+        <li><a href="calendario.html">Calendario</a></li>
+        <li><a href="camiseta.html">Camiseta</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección Calendario -->
+  <section class="calendar">
+    <h1>Próximos Partidos y Torneos</h1>
+    <p>Mantente al día con los eventos en los que participa SOLME FC eSports.</p>
+
+    <div class="calendar-grid">
+      <!-- Evento 1 -->
+      <div class="calendar-card">
+        <h3>15 Agosto 2025</h3>
+        <p><strong>Valorant - Torneo Regional</strong></p>
+        <p>Rival: Team Phoenix</p>
+        <p>Resultado: Pendiente</p>
+      </div>
+
+      <!-- Evento 2 -->
+      <div class="calendar-card">
+        <h3>22 Agosto 2025</h3>
+        <p><strong>League of Legends - Liga Nacional</strong></p>
+        <p>Rival: Dragones eSports</p>
+        <p>Resultado: Pendiente</p>
+      </div>
+
+      <!-- Evento 3 -->
+      <div class="calendar-card">
+        <h3>29 Agosto 2025</h3>
+        <p><strong>EA Sports FC - Copa Virtual</strong></p>
+        <p>Rival: Cyber Titans</p>
+        <p>Resultado: Pendiente</p>
+      </div>
+
+      <!-- Evento 4 -->
+      <div class="calendar-card">
+        <h3>5 Septiembre 2025</h3>
+        <p><strong>Counter-Strike 2 - Torneo Online</strong></p>
+        <p>Rival: Shadow Clan</p>
+        <p>Resultado: Pendiente</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 SOLME FC eSports. Todos los derechos reservados.</p>
+  </footer>
+  <script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('open');
+  });
+</script>
+</body>
+</html>
